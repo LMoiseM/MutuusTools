@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Código de Verificación</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <style>
+      body {
+        font-family: "Montserrat";
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        max-width: 700px;
+        margin: 30px auto;
+        background-color: #ffffff;
+        padding: 30px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .sub {
+        height: 300px;
+        border-radius: 24px;
+        background-color: #f8f8f8;
+      }
+      .logo {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .logo img {
+        max-width: 150px;
+      }
+      .header {
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 20px;
+        color: black;
+        height: 20%;
+      }
+      .header span {
+        color: #aed43a;
+        font-weight: bold;
+      }
+      .code {
+        text-align: center;
+        font-size: 36px;
+        font-weight: bold;
+        margin: 20px 0;
+        height: 20%;
+      }
+      .code span {
+        background-color: #f7f7f7;
+        padding: 10px 20px;
+        border-radius: 50px;
+        color: #003896;
+        margin: 0 10px;
+      }
+      .line {
+        border-bottom: 1px solid #003f9a;
+        margin: 20px 0;
+        width: 100%;
+      }
+      .footer {
+        font-size: 14px;
+        color: #666666;
+        text-align: justify;
+        margin-top: 30px;
+      }
+      .footer p {
+        margin: 5px 0;
+        color: black;
+        height: 20%;
+      }
+      .social {
+        text-align: center;
+        margin-top: 20px;
+      }
+      .social a {
+        margin: 0 10px;
+        color: #000; 
+        font-size: 24px;
+        text-decoration: none;
+      }
+
+      .social a:hover {
+        color: #000; 
+      }
+      .social img {
+        margin: 0 10px;
+        width: 24px;
+        height: 24px;
+      }
+      .links {
+        text-align: center;
+        color: black;
+        margin-top: 20px;
+        font-size: 12px;
+      }
+      .links a {
+        color: black;
+        margin: 0 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <img
+          src="http://cdn.mcauto-images-production.sendgrid.net/658b8697b933a65e/ebe95a57-d167-4bd2-8528-be31e86b83d3/1581x201.png"
+          width="950"
+          style="
+            display: block;
+            max-width: 100%;
+            height: auto;
+            color: #f18f10;
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 14px;
+          "
+          alt="MUTUUS"
+        />
+      </div>
+      <div class="container sub">
+        <div class="header">
+          {{name}} ingresa tu <span>código de verificación</span>
+        </div>
+        <div class="code">
+          <span>{{code}}</span>
+        </div>
+        <div class="line"></div>
+        <div class="footer">
+          <p>
+            Este código permanecerá activo durante 10 minutos. Si tardas más
+            tiempo en introducirlo en la plataforma que acabas de visitar,
+            puedes solicitar otro código.
+          </p>
+          <p
+            style="
+              display: block;
+              max-width: 100%;
+              height: auto;
+              text-align: center;
+              font-size: 12px;
+            "
+          >
+            Atte.<br />
+            EQUIPO MUTUUS
+          </p>
+        </div>
+      </div>
+      <div class="social">
+        <a href="https://www.instagram.com/"
+        ><i class="fab fa-facebook"></i
+      ></a>
+        <a href="https://www.instagram.com/"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:info@example.com"><i class="fas fa-envelope"></i></a>
+      </div>
+      <div class="links">
+        <a href="#">Aviso de Privacidad</a> | <a href="#">Centro de Ayuda</a>
+      </div>
+    </div>
+  </body>
+</html>
