@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Correo de Bienvenida</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 20px auto;
+      background-color: #F8F8F8;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .header {
+      background-color: #ffffff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .header img {
+      width: 150px;
+    }
+
+    .welcome-image {
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      padding: 0;
+      margin: 0;
+      border-radius: 30px;
+    }
+
+    .welcome-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 30px;
+    }
+
+    .content {
+      padding: 20px 30px;
+      color: #333333;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.5;
+      text-align: justify;
+    }
+
+    .highlight {
+      color: #d32f2f;
+      font-weight: bold;
+    }
+
+    .contact-info {
+      color: #1976d2;
+      font-weight: bold;
+    }
+
+    .footer-note {
+      font-size: 14px;
+      margin-top: 20px;
+      color: #555555;
+      text-align: justify;
+    }
+
+    .footer-note a {
+      color: #1976d2;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+
+    .title {
+      font-size: 14px;
+      color: #333333;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .title span {
+      font-weight: bold;
+    }
+
+    .button-green {
+      background-color: #9CD41C;
+      color: white;
+      padding: 10px 25px;
+      border-radius: 50px;
+      font-size: 16px;
+      display: block;
+      width: fit-content;
+      margin: 20px auto;
+      text-align: center;
+      text-decoration: none;
+    }
+
+
+    .discount-section {
+      background-color: #ffffff;
+      padding: 20px;
+      margin-top: 30px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      position: fixed;
+      /* Cambiado de sticky a fixed */
+      top: 20px;
+      /* Puedes ajustar la distancia desde la parte inferior */
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1000;
+      width: calc(100% - 40px);
+      /* Ajusta el ancho según sea necesario */
+      max-width: 560px;
+    }
+
+    .discount-text {
+      color: #333333;
+      font-size: 14px;
+      margin-bottom: 15px;
+      font-weight: normal;
+    }
+
+    .discount-text .highlight {
+      color: #1976d2;
+      font-weight: bold;
+    }
+
+    .button-discount {
+      background-color: #9CD41C;
+      color: white;
+      padding: 10px 25px;
+      border-radius: 50px;
+      font-weight: bold;
+      font-size: 16px;
+      display: inline-block;
+      text-align: center;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="discount-section">
+      <p class="discount-text">COMPLETA ESTE FORMULARIO DE PRODUCTO Y OBTÉN <span class="highlight">$200 PESOS DE
+          DESCUENTO</span> EN TU SIGUIENTE FACTURA</p>
+      <a href="#" class="button-discount">CLIC AQUÍ</a>
+    </div>
+    <!-- Encabezado con logo -->
+    <div class="header">
+      <img src="/img/logo.png" alt="Mutuus Logo">
+    </div>
+
+    <!-- Imagen de bienvenida con texto -->
+    <div class="welcome-image">
+      <img src="/img/headerB.jpeg" alt="Bienvenido/a">
+    </div>
+
+    <!-- Contenido del mensaje -->
+    <div class="content">
+      <p class="title">Apreciable <span>OSCAR ADRIAN MEDELLIN</span></p>
+      <div class="content">
+        <p>Felicidades por haber tomado la decisión de proteger tu salud y patrimonio; nuestra misión es que en caso de
+          enfermedad o accidentes tú puedas enfocarte en restablecer tu salud y nosotros nos encargamos del resto.</p>
+        <p>El número de tu membresía es el <strong>22123</strong> con fecha de inicio de vigencia el 28/06/2024.</p>
+        <p>Reporta inmediatamente tus urgencias y/o eventos médicos (programación de cirugías, hospitalización por
+          cualquier motivo, procedimiento médico hospitalario, etc.) usando tu APP MUTUUS O LLAMANDO AL <span
+            class="contact-info">55-8525-8800</span></p>
+        <p class="highlight">En caso de no reportar tendrás que pagar un deducible de $40,000.00 pesos con coaseguro de
+          50% sin límite.</p>
+        <p class="footer-note">Recuerda que también podrás consultar tu membresía en nuestro <a href="#">portal web</a>
+          utilizando tu usuario y contraseña que asignaste al darte de alta en nuestra app.</p>
+        <p class="footer-note">Para poder consultar tu Póliza/Certificado de Salud con los endosos correspondientes
+          ingresa a la app o al portal web en la sección de “mi perfil/documentos.”</p>
+
+      </div>
+      <div class="welcome-image">
+        <img src="/img/app.png" alt="Bienvenido/a">
+      </div>
+      <div class="content">
+        <p>Dentro de la app suma asegurada, también podrás consultar los siguientes documentos:</p>
+        <ul>
+          <li>Manual: “Cómo usar mi Membresía” (Link)</li>
+          <li>Manual y reglamento de la membresía</li>
+          <li>Condiciones Generales de la Póliza</li>
+          <li>Certificado</li>
+        </ul>
+        <p>En caso de requerir factura deberás enviar un email a <a
+            href="mailto:facturacion@psmutuus.com">facturacion@psmutuus.com</a> con los siguientes datos:</p>
+        <ul>
+          <li>RFC</li>
+          <li>Nombre del Contribuyente</li>
+          <li>Régimen Fiscal</li>
+          <li>Domicilio Fiscal</li>
+          <li>ID y Nombre Completo de Member(s)</li>
+        </ul>
+        <p>Contarás con 5 días para realizar tu solicitud de factura y la recibirás en un plazo máximo de 2 días
+          hábiles.
+        </p>
+        <p>Recuerda que cualquier duda que tengas cuentas con nuestro equipo de concierge Médico llamando en horario de
+          oficina de lunes a viernes de 8:30 a 18:30 al <span class="contact-info">55 85 25 8800</span>.</p>
+        <p>Una vez más agradecemos tu confianza.</p>
+
+        <a href="#" class="button-green">MARCAR A CONCIERGE</a>
+
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
