@@ -1,0 +1,80 @@
+query servicesName {
+  definition_services(where: {businessUnit: {_eq: "7c46a57b-58d7-4383-87e2-0bde940db06e"}}) {
+    id
+    name
+  }
+}
+
+query MyQuery {
+  definition_services(where: {businessUnit: {_eq: "7c46a57b-58d7-4383-87e2-0bde940db06e"}}) {
+    id
+    name
+  }
+  services(where: {businessUnit: {_eq: "7c46a57b-58d7-4383-87e2-0bde940db06e"}, serviceTypeId: {_eq: "13049"}}) {
+    id
+    comunaName
+    comunaId
+    colorSLA
+    caseId
+    serviceDeleted
+    serviceDestination
+    serviceDestinationLatitude
+    serviceDestinationLongitude
+    serviceOrigin
+    serviceTypeId
+    servicePurchased
+    serviceStatus
+    serviceOriginLongitude
+    serviceOriginLatitude
+    startedDate
+    state
+    subscriptionPlanId
+    sucursalId
+    timeSLA
+    transferStartDate
+    incidence
+    initialPrice
+    isAccepted
+    isBudget
+    isExpress
+    isRejected
+    manualAssignmentDate
+    planId
+    plannedFinishDateTime
+    plannedStartDateTime
+    professionalOnTheWayDate
+    professionalId
+    professionalCost
+    providerId
+    realFinishDate
+    realStartDate
+    reasonCancellation
+    reasonClosedService
+    rejectedDate
+    rescheduleDate
+    scheduleDate
+    executionTime
+    emergencyService
+    entryChannel
+    conclusionDate
+    costLines
+    createdAt
+    creationDate
+    customerId
+    desiredDate
+    details
+    detailsCancellation
+    detailsIncidence
+    acceptedDate
+    assignmentDate
+    addressComplement
+    assignmentManual
+    bookingDate
+    bookingParentId
+    businessUnit
+    cancellationDate
+    updatedAt
+    usernameManualAssignment
+    usernameReschedule
+  }
+}

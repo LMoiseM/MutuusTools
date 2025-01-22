@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Correo de Bienvenida</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   <style>
     body {
       font-family: 'Montserrat', sans-serif;
@@ -64,7 +65,7 @@
     }
 
     .contact-info {
-      color: #1976d2;
+      color: #183B91;
       font-weight: bold;
     }
 
@@ -111,30 +112,23 @@
       background-color: #ffffff;
       padding: 20px;
       margin-top: 30px;
+      margin-bottom: 30px;
       border-radius: 20px;
       text-align: center;
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-      position: fixed;
-      /* Cambiado de sticky a fixed */
-      top: 20px;
-      /* Puedes ajustar la distancia desde la parte inferior */
-      left: 50%;
-      transform: translateX(-50%);
       z-index: 1000;
       width: calc(100% - 40px);
-      /* Ajusta el ancho según sea necesario */
-      max-width: 560px;
     }
 
     .discount-text {
-      color: #333333;
+      color: #183B91;
       font-size: 14px;
       margin-bottom: 15px;
       font-weight: normal;
     }
 
     .discount-text .highlight {
-      color: #1976d2;
+      color: #183B91;
       font-weight: bold;
     }
 
@@ -149,6 +143,40 @@
       text-align: center;
       text-decoration: none;
     }
+
+    .social {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .social a {
+      margin: 0 10px;
+      color: #000;
+      font-size: 24px;
+      text-decoration: none;
+    }
+
+    .social a:hover {
+      color: #000;
+    }
+
+    .social img {
+      margin: 0 10px;
+      width: 24px;
+      height: 24px;
+    }
+
+    .links {
+      text-align: center;
+      color: black;
+      margin-top: 20px;
+      font-size: 12px;
+    }
+
+    .links a {
+      color: black;
+      margin: 0 10px;
+    }
   </style>
 </head>
 
@@ -162,12 +190,12 @@
     </div>
     <!-- Encabezado con logo -->
     <div class="header">
-      <img src="/img/logo.png" alt="Mutuus Logo">
+      <img src="https://lmoisem.github.io/MutuusTools/img/logo.png" alt="Mutuus Logo">
     </div>
 
     <!-- Imagen de bienvenida con texto -->
     <div class="welcome-image">
-      <img src="/img/headerB.jpeg" alt="Bienvenido/a">
+      <img src="https://lmoisem.github.io/MutuusTools/img/bienvenida.png" alt="Bienvenido/a">
     </div>
 
     <!-- Contenido del mensaje -->
@@ -182,14 +210,17 @@
             class="contact-info">55-8525-8800</span></p>
         <p class="highlight">En caso de no reportar tendrás que pagar un deducible de $40,000.00 pesos con coaseguro de
           50% sin límite.</p>
-        <p class="footer-note">Recuerda que también podrás consultar tu membresía en nuestro <a href="#">portal web</a>
+        <p class="footer-note">Recuerda que también podrás consultar tu membresía en nuestro <a class="contact-info"
+            href="#">
+            <p>portal web</p>
+          </a>
           utilizando tu usuario y contraseña que asignaste al darte de alta en nuestra app.</p>
         <p class="footer-note">Para poder consultar tu Póliza/Certificado de Salud con los endosos correspondientes
           ingresa a la app o al portal web en la sección de “mi perfil/documentos.”</p>
 
       </div>
       <div class="welcome-image">
-        <img src="/img/app.png" alt="Bienvenido/a">
+        <img src="https://lmoisem.github.io/MutuusTools/img/app.png" alt="Bienvenido/a">
       </div>
       <div class="content">
         <p>Dentro de la app suma asegurada, también podrás consultar los siguientes documentos:</p>
@@ -220,7 +251,15 @@
 
 
       </div>
-
+      <div class="social">
+        <a href="https://www.instagram.com/"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:info@example.com"><i class="fas fa-envelope"></i></a>
+      </div>
+      <div class="links">
+        <a href="#">Aviso de Privacidad</a> | <a href="#">Centro de Ayuda</a>
+      </div>
     </div>
 
   </div>
